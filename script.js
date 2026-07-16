@@ -27,14 +27,24 @@ function login() {
                 behavior: "smooth"
             });
 
-        },700);
+        }, 700);
 
-    }
+    } else {
 
-    else{
-
-        error.innerHTML="❤️ Şifre yanlış...";
+        error.innerHTML = "❤️ Wrong password.";
 
     }
 
 }
+
+document
+    .getElementById("password")
+    .addEventListener("keypress", function (e) {
+
+        if (e.key === "Enter") {
+
+            login();
+
+        }
+
+    });
