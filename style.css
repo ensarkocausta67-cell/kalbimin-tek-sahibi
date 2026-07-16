@@ -278,3 +278,105 @@ box-shadow:0 10px 30px rgba(255,0,70,.25);
 transform:scale(1.05);
 
 }
+.voice{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.voice audio{
+    width:300px;
+    margin:15px;
+    border-radius:15px;
+}
+
+.promise{
+    max-width:900px;
+    margin:auto;
+}
+
+.promise ul{
+    list-style:none;
+    padding:0;
+}
+
+.promise li{
+    background:rgba(255,255,255,.06);
+    margin:15px 0;
+    padding:20px;
+    border-radius:18px;
+    transition:.35s;
+}
+
+.promise li:hover{
+    transform:translateX(10px);
+    background:rgba(255,0,80,.18);
+}
+
+.finish{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:40px;
+}
+
+.finish h1{
+    font-size:70px;
+    font-family:'Great Vibes',cursive;
+    color:#ff5b88;
+}
+
+.finish p{
+    max-width:700px;
+    line-height:2;
+    font-size:20px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:48px;
+}
+
+.gallery h2,
+.voice h2,
+.promise h2{
+font-size:42px;
+}
+
+.glass{
+padding:30px;
+}
+
+.photos{
+grid-template-columns:1fr;
+}
+
+.voice audio{
+width:100%;
+}
+
+}
