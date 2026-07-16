@@ -1,0 +1,1 @@
+# kalbimin-tek-sahibi
